@@ -1,0 +1,23 @@
+@import '../../../assets/styles/mixin.scss';
+
+.input {
+	@apply relative block mb-4 bg-white rounded-md;
+
+	> input {
+		@apply pb-2 w-full text-base rounded-md overflow-hidden p-2;
+		@include shadow();
+
+		&::placeholder {
+			@apply text-gray-400;
+		}
+
+		&:focus-visible {
+			@apply border-primary;
+		}
+	}
+}
+
+.error {
+	@apply absolute -bottom-4 left-0 w-full text-primary;
+	font-size: 0.75rem;
+}

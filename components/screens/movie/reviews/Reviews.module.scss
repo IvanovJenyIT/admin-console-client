@@ -1,0 +1,19 @@
+.reviewItem {
+	@apply p-4 text-[#222222] bg-[#D3DAF0] rounded-lg mb-2;
+
+	.autor {
+		@apply flex items-center;
+
+		img {
+			@apply rounded-full;
+		}
+
+		> div {
+			@apply ml-2;
+		}
+	}
+
+	> article {
+		@apply mt-4 text-sm;
+	}
+}
